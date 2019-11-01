@@ -1,1 +1,15 @@
-<p>home works!</p>
+<h1>CV</h1>
+<h4>EDUCATION</h4>
+<div *ngFor="let cvEducationItem of cvEducationItems">
+  <app-cv-item [headline]="cvEducationItem.headline" [text]="cvEducationItem.text"></app-cv-item>
+</div>
+
+<h4>PREVIOUS EXPERIENCE</h4>
+<div *ngFor="let cvExperienceItem of cvExperienceItems">
+  <app-cv-item [headline]="cvExperienceItem.headline" [text]="cvExperienceItem.text"></app-cv-item>
+</div>
+
+<h4>SKILLS</h4>
+<div *ngFor="let cvSkillItem of cvSkillItems">
+  <app-cv-item [headline]="cvSkillItem.headline" [text]="cvSkillItem.text"></app-cv-item>
+</div>

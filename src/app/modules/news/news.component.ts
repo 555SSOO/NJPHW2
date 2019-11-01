@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Constants} from "../../shared/constants";
+import {Article} from "../../core/models/article.model";
 
 @Component({
   selector: 'app-news',
@@ -6,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  constructor() {}
+  articles: Array<Article>;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.articles = Constants.ARTICLES;
   }
 
 }

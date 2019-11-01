@@ -1,1 +1,6 @@
-NEWS
+<h1>NEWS</h1>
+<br>
+
+<div *ngFor="let article of articles">
+  <app-news-item [id]="article.id" [headline]="article.headline" [text]="article.text"></app-news-item>
+</div>
