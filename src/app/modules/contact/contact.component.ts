@@ -4,10 +4,10 @@ import { UserService } from 'src/app/core/services/user.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html'
+  selector: 'app-contact',
+  templateUrl: './contact.component.html'
 })
-export class LoginComponent implements OnInit {
+export class ContactComponent implements OnInit {
   authForm: FormGroup;
 
   constructor(
@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         console.log(err);
       }
     );
-    
+
   }
 
 }
