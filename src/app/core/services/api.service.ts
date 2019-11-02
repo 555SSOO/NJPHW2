@@ -50,7 +50,7 @@ export class ApiService {
     return new Observable((observer) => {
 
       // observable execution
-      // var user: User = {email: 'test@demo3.com', token: 'randomToken', username:'test', bio: '', image: ''};
+      // var user: User = {email: 'test@njphw2.com', token: 'randomToken', username:'test', bio: '', image: ''};
       // observer.next({user: user});
 
       observer.complete();

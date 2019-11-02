@@ -8,7 +8,7 @@ import {Article} from "../../../core/models/article.model";
 export class NewsItemComponent implements OnInit {
 
   @Input()
-  id: String;
+  id: number;
 
   @Input()
   headline: String;
@@ -21,7 +21,7 @@ export class NewsItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    let likedArticles: Array = JSON.parse(localStorage.getItem('likedArticles'));
+    let likedArticles: Array<number> = JSON.parse(localStorage.getItem('likedArticles'));
     if(likedArticles.includes(this.id)) {
       this.isLiked = true;
     }
@@ -33,7 +33,7 @@ export class NewsItemComponent implements OnInit {
 
   likeItem(){
     this.isLiked = !this.isLiked;
-    let likedArticles: Array = JSON.parse(localStorage.getItem('likedArticles'));
+    let likedArticles: Array<number> = JSON.parse(localStorage.getItem('likedArticles'));
     if(likedArticles.includes(this.id)) {
       likedArticles = likedArticles.filter(this.equalsId.bind(this, this.id));
     }

@@ -11,6 +11,7 @@ import { HeaderComponent } from './shared/layout/header/header.component'
 import { CoreModule } from './core/core.module';
 import {NewsModule} from './modules/news/news.module';
 import {FooterComponent} from './shared/layout/footer/footer.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {FooterComponent} from './shared/layout/footer/footer.component';
     HomeModule,
     ContactModule,
     NewsModule,
-    CoreModule
+    CoreModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
